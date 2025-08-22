@@ -1,3 +1,9 @@
+import { Increment } from "./increment";
+
 export default function Home() {
-	return <h1>test</h1>;
+	return (
+		<>
+			<Increment />
+		</>
+	);
 }
