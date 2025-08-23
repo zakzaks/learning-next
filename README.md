@@ -4,7 +4,7 @@ Next JS Playground
 <h3>Requirements</h3>
 
 - Node.js 18.18 or later.
-- Operatiing system macOS, Windows (including WSL), or Linux.
+- Operating systems: macOS, Windows (including WSL), or Linux.
 
 <h3>How to run</h3>
 
