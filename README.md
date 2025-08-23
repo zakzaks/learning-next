@@ -20,3 +20,4 @@
 - Linking between routes using `Link` NextJS
 - Font management using `next/font/google`
 - `layout.tsx` and `page.tsx`
+- NextJS Images
