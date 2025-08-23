@@ -1,5 +1,4 @@
-Next JS Playground
----
+## Next JS Playground
 
 <h3>Requirements</h3>
 
@@ -15,7 +14,7 @@ Next JS Playground
 
 - React Server Component (Server Side Rendering) and Client Component (`use client`)
 - Simple routing based on NextJS Convention (routing based on folder `app` hierarcy)
-- Folder architecture 
+- Folder architecture
 - Nested routing
 - Group routing
 - Linking between routes using `Link` NextJS
