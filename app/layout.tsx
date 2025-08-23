@@ -1,6 +1,11 @@
 import { Metadata } from "next";
 import "./globals.css";
+import { Inter } from "next/font/google";
 import Link from "next/link";
+
+const fontSans = Inter({
+	subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -14,13 +19,18 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="p-4 w-full h-full">
+			<body className={`p-5 ${fontSans.className}`}>
 				<nav>
-					<Link href="/">Home</Link>
-					<Link href="/admin">Admin</Link>
-					<Link href="/admin/product">Product</Link>
+					<Link className="mr-4 cursor-pointer" href="/">
+						Home
+					</Link>
+					<Link className="mr-4 cursor-pointer" href="/admin">
+						Admin
+					</Link>
+					<Link className="mr-4 cursor-pointer" href="/admin/product">
+						Product
+					</Link>
 				</nav>
-				<h3 className="text-2xl font-bold mb-4">Next.js App Layout</h3>
 				{children}
 			</body>
 		</html>

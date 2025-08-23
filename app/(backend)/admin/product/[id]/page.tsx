@@ -7,7 +7,6 @@ export default async function ProductDetailPage({
 	console.log(id);
 	return (
 		<>
-			<h1 className="text-3xl font-bold mb-4">Product Detail Page</h1>
 			<p>Viewing details for product ID: {id}</p>
 		</>
 	);
