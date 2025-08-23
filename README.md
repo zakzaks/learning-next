@@ -3,11 +3,13 @@ Next JS Playground
 
 <h3>Requirements</h3>
 
-- NodeJS
+- Node.js 18.18 or later.
+- Operatiing system macOS, Windows (including WSL), or Linux.
 
 <h3>How to run</h3>
 
-- Run `npm run dev`
+- Run `npm install` for installing all dependencies
+- Run `npm run dev` and open the browser `http://localhost:3000/`
 
 <h3>Learning Milestone !</h3>
 
