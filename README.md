@@ -20,4 +20,5 @@
 - Linking between routes using `Link` NextJS
 - Font management using `next/font/google`
 - `layout.tsx` and `page.tsx`
-- NextJS Images
+- NextJS Images with placeholder blur using `blurDataImage`
+- Fetching data with helper module `json-server`
