@@ -30,6 +30,9 @@ export default function RootLayout({
 					<Link className="mr-4 cursor-pointer" href="/admin/product">
 						Product
 					</Link>
+					<Link className="mr-4 cursor-pointer" href="/user">
+						User
+					</Link>
 				</nav>
 				{children}
 			</body>
