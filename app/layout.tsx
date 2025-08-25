@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`p-5 ${fontSans.className}`}>
+			<body className={`p-5 ${fontSans.className} antialiased`}>
 				<nav>
 					<Link className="mr-4 cursor-pointer" href="/">
 						Home

@@ -1,8 +1,5 @@
-type User = {
-	id: number;
-	name: string;
-	email: string;
-};
+import Link from "next/link";
+import { User } from "@/app/lib/users";
 
 async function getUsers(): Promise<User[]> {
 	const res = await fetch("http://localhost:3001/users");
@@ -19,8 +16,11 @@ export default async function UserPage() {
 			</p>
 			<ul>
 				{users.map((user) => (
-					<li key={user.id}>
-						{user.name} - {user.email}
+					<li key={user.id} className="flex gap-2">
+						<span>{user.name}</span>
+						<Link href={`/user/${user.id}`} className="text-blue-500 underline">
+							detail
+						</Link>
 					</li>
 				))}
 			</ul>

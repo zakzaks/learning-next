@@ -3,11 +3,15 @@
 		{
 			"id": 1,
 			"name": "John Doe",
+			"address": "123 Main St",
+			"hobby": "Reading",
 			"email": "john@example.com"
 		},
 		{
 			"id": 2,
 			"name": "Jane Smith",
+			"address": "456 Elm St",
+			"hobby": "Traveling",
 			"email": "jane@example.com"
 		}
 	]
