@@ -24,3 +24,5 @@
 - Fetching data with helper module `json-server`
 - Fetching detail user
 - `Request Memoization` of the same url/options using `fetch`
+- Data fetching on Client Component using React `use` hook
+- Using `<Suspense />` to give loading indicator while pulling data

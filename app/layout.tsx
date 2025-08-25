@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import { getOwner } from "@/lib/getOwner";
+import Header from "./header";
 
 const fontSans = Inter({
 	subsets: ["latin"],
@@ -23,23 +23,7 @@ export default async function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`p-5 ${fontSans.className} antialiased`}>
-				<header>
-					<h1 className="border-b border-white text-2xl font-bold">{name}</h1>
-				</header>
-				<nav>
-					<Link className="mr-4 cursor-pointer" href="/">
-						Home
-					</Link>
-					<Link className="mr-4 cursor-pointer" href="/admin">
-						Admin
-					</Link>
-					<Link className="mr-4 cursor-pointer" href="/admin/product">
-						Product
-					</Link>
-					<Link className="mr-4 cursor-pointer" href="/user">
-						User
-					</Link>
-				</nav>
+				<Header />
 				{children}
 				<footer className="mt-4 border-t border-white">
 					<p className="text-sm text-gray-500">
