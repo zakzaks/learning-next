@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { Increment } from "./increment";
 import image from "../public/image-1.jpg";
 
 export default function Home() {
 	return (
 		<>
-			<Increment />
 			<div className="relative w-40 h-40 mt-4">
 				<Image
 					className="rounded-full"

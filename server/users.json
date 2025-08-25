@@ -14,5 +14,10 @@
 			"hobby": "Traveling",
 			"email": "jane@example.com"
 		}
-	]
+	],
+	"owner": {
+		"id": 1,
+		"name": "Admin",
+		"email": "admin@example.com"
+	}
 }

@@ -22,3 +22,5 @@
 - `layout.tsx` and `page.tsx`
 - NextJS Images with placeholder blur using `blurDataImage`
 - Fetching data with helper module `json-server`
+- Fetching detail user
+- `Request Memoization` of the same url/options using `fetch`

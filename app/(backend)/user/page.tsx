@@ -1,11 +1,5 @@
 import Link from "next/link";
-import { User } from "@/app/lib/users";
-
-async function getUsers(): Promise<User[]> {
-	const res = await fetch("http://localhost:3001/users");
-	const users = await res.json();
-	return users;
-}
+import { getUsers } from "@/lib/getUsers";
 
 export default async function UserPage() {
 	const users = await getUsers();
