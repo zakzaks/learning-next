@@ -7,8 +7,8 @@ export async function create(prevState: any, formData: FormData) {
 	}
 }
 
-export async function refresh() {
+export async function refresh(userId: number) {
 	await new Promise((resolve) => setTimeout(resolve, 3000));
 
-	console.log("refreshing...");
+	console.log("refreshing...", userId);
 }

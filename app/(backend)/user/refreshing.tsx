@@ -3,19 +3,23 @@
 import { useTransition } from "react";
 import { refresh } from "./actions";
 
-export default function Refreshing() {
+export default function Refreshing({ userId }: { userId: number }) {
 	const [isPending, startTransition] = useTransition();
 
-	const handleRefresh = () => {
+	async function handleRefresh(userId: number) {
 		startTransition(async () => {
-			await refresh();
+			await refresh(userId);
 		});
-	};
+	}
 
 	return (
 		<>
-			<button onClick={handleRefresh} disabled={isPending}>
-				{isPending ? "Refreshing..." : "Refresh"}
+			<button
+				className=" hover:underline cursor-pointer"
+				onClick={() => handleRefresh(userId)}
+				disabled={isPending}
+			>
+				{isPending ? "progress..." : "refresh"}
 			</button>
 		</>
 	);

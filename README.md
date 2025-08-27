@@ -28,3 +28,4 @@
 - Using `<Suspense />` to give loading indicator while pulling data
 - Form Validation on server using `useActionState`
 - Server Action that triggered using eventHandler and handled using `useTransition`
+- Passing argument to Server

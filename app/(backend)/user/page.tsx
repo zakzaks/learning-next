@@ -10,7 +10,6 @@ export default async function UserPage() {
 			<p className="mb-3">
 				This is the user page content and here are the list of users:
 			</p>
-			<Refreshing />
 			<UserForm />
 			<ul>
 				{users.map((user) => (
@@ -19,6 +18,7 @@ export default async function UserPage() {
 						<Link href={`/user/${user.id}`} className="text-blue-500 underline">
 							detail
 						</Link>
+						<Refreshing userId={user.id} />
 					</li>
 				))}
 			</ul>
