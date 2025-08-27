@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getUsers } from "@/lib/getUsers";
 import UserForm from "./user-form";
+import Refreshing from "./refreshing";
 
 export default async function UserPage() {
 	const users = await getUsers();
@@ -9,6 +10,7 @@ export default async function UserPage() {
 			<p className="mb-3">
 				This is the user page content and here are the list of users:
 			</p>
+			<Refreshing />
 			<UserForm />
 			<ul>
 				{users.map((user) => (
