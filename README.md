@@ -26,3 +26,4 @@
 - `Request Memoization` of the same url/options using `fetch`
 - Data fetching on Client Component using React `use` hook
 - Using `<Suspense />` to give loading indicator while pulling data
+- Form Validation on server using `useActionState`
