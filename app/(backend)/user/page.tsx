@@ -2,6 +2,11 @@ import Link from "next/link";
 import { getUsers } from "@/lib/getUsers";
 import UserForm from "./user-form";
 import Refreshing from "./refreshing";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "User",
+};
 
 export default async function UserPage() {
 	const users = await getUsers();

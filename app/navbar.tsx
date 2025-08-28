@@ -14,6 +14,9 @@ export default function NavBar({
 		<>
 			<nav>
 				<Link className="mr-4 cursor-pointer" href="/">
+					Main
+				</Link>
+				<Link className="mr-4 cursor-pointer" href="/homepage">
 					Home
 				</Link>
 				<Link className="mr-4 cursor-pointer" href="/admin">

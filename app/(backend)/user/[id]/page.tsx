@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "User Detail",
+};
+
 async function getUser(id: string) {
 	const res = await fetch(`http://localhost:3001/users/?id=${id}`);
 	// destructive from array of object (only get the object)
