@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function UserPage() {
+	await new Promise((resolve) => setTimeout(resolve, 3000)); // Simulate a delay
 	const users = await getUsers();
 	return (
 		<>
