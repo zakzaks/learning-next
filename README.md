@@ -30,3 +30,4 @@
 - Server Action that triggered using eventHandler and handled using `useTransition`
 - Passing argument to Server
 - Changing title, description, and favicon
+- Middleware, middleware with redirecting based on specific routes, and dynamic routing handlers

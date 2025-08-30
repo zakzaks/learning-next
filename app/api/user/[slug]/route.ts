@@ -1,9 +1,17 @@
 import { NextRequest } from "next/server";
 
-export async function GET(request: NextRequest) {
+export async function GET(
+	request: NextRequest,
+	{
+		params,
+	}: {
+		params: Promise<{ slug: string }>;
+	}
+) {
+	const { slug } = await params;
 	const searchParams = request.nextUrl.searchParams;
 	const query = searchParams.get("query");
-	console.log(query);
+	console.log("Query parameter:", slug);
 	const data = {
 		name: "John Doe",
 		email: "john.doe@example.com",
@@ -14,11 +22,11 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: Request) {
-	const data = await request.json();
+	const data = await request.formData();
 	const user = {
-		name: data.name,
-		email: data.email,
-		hobby: data.hobby,
+		name: data.get("name"),
+		email: data.get("email"),
+		hobby: data.get("hobby"),
 	};
 
 	return Response.json(user);
